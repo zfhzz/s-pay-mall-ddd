@@ -38,6 +38,12 @@
             <groupId>cn.bugstack</groupId>
             <artifactId>s-pay-mall-ddd-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.6</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

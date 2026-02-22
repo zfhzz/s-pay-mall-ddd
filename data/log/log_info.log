@@ -880,3 +880,127 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 <Status><![CDATA[success]]></Status>
 </xml>
 26-02-22.16:48:49.744 [http-nio-8080-exec-2] INFO  LoginController        - 扫码检测登录结果 ticket:gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyczhXS28xU2VjQXQxUS1mMk5GMW0AAgQ_wpppAwQAjScA openidToken:otk4k3c7aBAmW5OOpMzo_OE_Mo30
+26-02-22.20:35:48.563 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 12048 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:35:48.565 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:35:49.040 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.20:35:49.045 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.20:35:49.045 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.20:35:49.045 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.20:35:49.143 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.20:35:49.143 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+26-02-22.20:35:49.585 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-02-22.20:35:49.586 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.20:35:49.594 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.20:35:49.603 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' in your configuration.
+
+26-02-22.20:41:43.280 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 32620 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:41:43.282 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:41:43.754 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.20:41:43.758 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.20:41:43.758 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.20:41:43.758 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.20:41:43.853 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.20:41:43.853 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+26-02-22.20:41:44.312 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-02-22.20:41:44.313 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.20:41:44.319 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.20:41:44.329 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' in your configuration.
+
+26-02-22.20:42:22.402 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 24044 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:42:22.403 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:42:22.863 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.20:42:22.867 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.20:42:22.867 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.20:42:22.868 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.20:42:22.958 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.20:42:22.958 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+26-02-22.20:42:23.407 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-02-22.20:42:23.409 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.20:42:23.414 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.20:42:23.426 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.infrastructure.dao.IOrderDao' in your configuration.
+
+26-02-22.20:47:59.870 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 29740 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:47:59.871 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:47:59.910 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.context.MissingWebServerFactoryBeanException: No qualifying bean of type 'org.springframework.boot.web.servlet.server.ServletWebServerFactory' available: Unable to start AnnotationConfigServletWebServerApplicationContext due to missing ServletWebServerFactory bean
+26-02-22.20:47:59.948 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web application could not be started as there was no org.springframework.boot.web.servlet.server.ServletWebServerFactory bean defined in the context.
+
+Action:
+
+Check your application's dependencies for a supported servlet web server.
+Check the configured web application type.
+
+26-02-22.20:48:33.890 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 3088 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:48:33.893 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:48:34.687 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.20:48:34.694 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.20:48:34.695 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.20:48:34.695 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.20:48:34.846 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.20:48:34.846 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 915 ms
+26-02-22.20:48:36.036 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.20:48:36.063 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.20:48:36.071 [main            ] INFO  Application            - Started Application in 2.546 seconds (JVM running for 3.66)
+26-02-22.20:51:23.465 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 27828 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.20:51:23.466 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.20:51:23.980 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.20:51:23.990 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.20:51:23.991 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.20:51:23.991 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.20:51:24.078 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.20:51:24.078 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 592 ms
+26-02-22.20:51:24.782 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.20:51:24.790 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.20:51:24.795 [main            ] INFO  Application            - Started Application in 1.534 seconds (JVM running for 2.203)
