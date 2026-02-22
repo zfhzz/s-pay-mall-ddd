@@ -585,3 +585,298 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: cn.bugstack.infr
 <Content><![CDATA[111]]></Content>
 <MsgId>25365215479373165</MsgId>
 </xml>
+26-02-22.16:00:32.288 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 22680 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:00:32.289 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:00:32.968 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack]' package. Please check your configuration.
+26-02-22.16:00:33.181 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:00:33.185 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:00:33.186 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:00:33.186 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:00:33.344 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:00:33.344 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1034 ms
+26-02-22.16:00:33.865 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+26-02-22.16:00:33.867 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.16:00:33.873 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.16:00:33.885 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bugstack.Application.main(Application.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+26-02-22.16:02:41.513 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 21172 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:02:41.514 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:02:41.838 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack]' package. Please check your configuration.
+26-02-22.16:02:42.030 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:02:42.034 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:02:42.034 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:02:42.034 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:02:42.132 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:02:42.132 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 598 ms
+26-02-22.16:02:42.671 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+26-02-22.16:02:42.672 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.16:02:42.677 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.16:02:42.686 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bugstack.Application.main(Application.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+26-02-22.16:04:21.700 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 24792 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:04:21.701 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:04:22.141 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:04:22.144 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:04:22.144 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:04:22.145 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:04:22.233 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:04:22.233 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+26-02-22.16:04:22.804 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.16:04:22.813 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.16:04:22.817 [main            ] INFO  Application            - Started Application in 1.346 seconds (JVM running for 1.92)
+26-02-22.16:05:17.694 [http-nio-8080-exec-2] INFO  Http11Processor        - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf30x010x000x000xef0x030x030x13U\0xda/0x09.+=x]0x14p0xfar0xc60xc7E0xef%f+0xfe0x95b0x94L0xea0xa3h0x970xe8 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+26-02-22.16:07:23.066 [http-nio-8080-exec-5] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.16:07:23.066 [http-nio-8080-exec-5] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.16:07:23.066 [http-nio-8080-exec-5] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.16:07:23.990 [http-nio-8080-exec-5] INFO  LoginController        - 生成微信扫码登录 ticket:gQEW8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyV0tvU29pU2VjQXQxUVk2Mk5GMVMAAgQ8uZppAwQAjScA
+26-02-22.16:07:38.125 [http-nio-8080-exec-7] INFO  LoginController        - 扫码检测登录结果 ticket:gQEW8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyV0tvU29pU2VjQXQxUVk2Mk5GMVMAAgQ8uZppAwQAjScA openidToken:null
+26-02-22.16:08:33.796 [http-nio-8080-exec-4] INFO  LoginController        - 扫码检测登录结果 ticket:gQEW8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyV0tvU29pU2VjQXQxUVk2Mk5GMVMAAgQ8uZppAwQAjScA openidToken:null
+26-02-22.16:08:48.241 [http-nio-8080-exec-8] INFO  LoginController        - 扫码检测登录结果 ticket:gQEW8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyV0tvU29pU2VjQXQxUVk2Mk5GMVMAAgQ8uZppAwQAjScA openidToken:null
+26-02-22.16:16:47.093 [http-nio-8080-exec-2] INFO  LoginController        - 生成微信扫码登录 ticket:gQG08DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyN0dyc29XU2VjQXQxUkw4MnhGMXMAAgRvu5ppAwQAjScA
+26-02-22.16:19:30.412 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 18800 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:19:30.413 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:19:30.836 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:19:30.839 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:19:30.840 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:19:30.840 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:19:30.926 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:19:30.926 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 494 ms
+26-02-22.16:19:31.472 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.16:19:31.479 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.16:19:31.484 [main            ] INFO  Application            - Started Application in 1.28 seconds (JVM running for 1.838)
+26-02-22.16:19:36.728 [http-nio-8080-exec-10] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.16:19:36.729 [http-nio-8080-exec-10] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.16:19:36.729 [http-nio-8080-exec-10] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.16:19:37.447 [http-nio-8080-exec-10] INFO  LoginController        - 生成微信扫码登录 ticket:gQFv8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYTEwbW9aU2VjQXQxUXA5MjFGMWEAAgQZvJppAwQAjScA
+26-02-22.16:23:36.353 [http-nio-8080-exec-4] INFO  WeixinPortalController - 微信公众号验签信息开始 [16bb3c8154d5495d7c51a938dcb36dd7dbf30337, 1771748616, 2074020070, 1662113325814562621]
+26-02-22.16:23:36.362 [http-nio-8080-exec-4] INFO  WeixinPortalController - 微信公众号验签信息完成 check：true
+26-02-22.16:23:45.832 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 27512 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:23:45.833 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:23:46.272 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:23:46.278 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:23:46.278 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:23:46.278 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:23:46.364 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:23:46.364 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+26-02-22.16:23:46.974 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.16:23:46.983 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.16:23:46.988 [main            ] INFO  Application            - Started Application in 1.372 seconds (JVM running for 1.953)
+26-02-22.16:23:53.625 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.16:23:53.625 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.16:23:53.625 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.16:23:54.359 [http-nio-8080-exec-1] INFO  LoginController        - 生成微信扫码登录 ticket:gQHP8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyUnRSa285U2VjQXQxUXFhMmhGMWwAAgQavZppAwQAjScA
+26-02-22.16:24:08.853 [http-nio-8080-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:gQHP8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyUnRSa285U2VjQXQxUXFhMmhGMWwAAgQavZppAwQAjScA openidToken:null
+26-02-22.16:33:54.756 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 25760 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:33:54.757 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:33:55.211 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:33:55.215 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:33:55.216 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:33:55.216 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:33:55.303 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:33:55.303 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 526 ms
+26-02-22.16:33:55.886 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.16:33:55.893 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.16:33:55.898 [main            ] INFO  Application            - Started Application in 1.36 seconds (JVM running for 1.929)
+26-02-22.16:34:02.559 [http-nio-8080-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.16:34:02.559 [http-nio-8080-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.16:34:02.560 [http-nio-8080-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-02-22.16:34:03.387 [http-nio-8080-exec-3] INFO  LoginController        - 生成微信扫码登录 ticket:gQGH8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybEt2SHAzU2VjQXQxUlhjMmhGMXoAAgR7v5ppAwQAjScA
+26-02-22.16:34:24.085 [http-nio-8080-exec-2] INFO  LoginController        - 扫码检测登录结果 ticket:gQGH8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybEt2SHAzU2VjQXQxUlhjMmhGMXoAAgR7v5ppAwQAjScA openidToken:null
+26-02-22.16:37:39.880 [http-nio-8080-exec-5] INFO  WeixinPortalController - 接收微信公众号信息请求otk4k3c7aBAmW5OOpMzo_OE_Mo30开始 <xml><ToUserName><![CDATA[gh_7989e5551c86]]></ToUserName>
+<FromUserName><![CDATA[otk4k3c7aBAmW5OOpMzo_OE_Mo30]]></FromUserName>
+<CreateTime>1771749458</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[222]]></Content>
+<MsgId>25365351249011899</MsgId>
+</xml>
+26-02-22.16:45:28.108 [http-nio-8080-exec-8] ERROR LoginController        - 生成微信扫码登录 ticket 失败
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "errcode" (class cn.bugstack.infrastructure.gateway.dto.WeixinQrCodeResponseDTO), not marked as ignorable (3 known properties: "ticket", "expire_seconds", "url"])
+ at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 17] (through reference chain: cn.bugstack.infrastructure.gateway.dto.WeixinQrCodeResponseDTO["errcode"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2036)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2051)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1459)
+	at retrofit2.converter.jackson.JacksonResponseBodyConverter.convert(JacksonResponseBodyConverter.java:33)
+	at retrofit2.converter.jackson.JacksonResponseBodyConverter.convert(JacksonResponseBodyConverter.java:23)
+	at retrofit2.OkHttpCall.parseResponse(OkHttpCall.java:243)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:204)
+	at cn.bugstack.infrastructure.adapter.port.LoginPort.createQrCodeTicket(LoginPort.java:58)
+	at cn.bugstack.domain.auth.service.WeixinLoginService.createQrCodeTicket(WeixinLoginService.java:24)
+	at cn.bugstack.trigger.http.LoginController.weixinQrCodeTicket(LoginController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+26-02-22.16:45:41.609 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 8328 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.16:45:41.611 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.16:45:42.043 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.16:45:42.046 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.16:45:42.046 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.16:45:42.046 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.16:45:42.133 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.16:45:42.134 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 502 ms
+26-02-22.16:45:42.724 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.16:45:42.731 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.16:45:42.736 [main            ] INFO  Application            - Started Application in 1.343 seconds (JVM running for 1.948)
+26-02-22.16:45:49.434 [http-nio-8080-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.16:45:49.434 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.16:45:49.434 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.16:45:50.090 [http-nio-8080-exec-2] INFO  LoginController        - 生成微信扫码登录 ticket:gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyczhXS28xU2VjQXQxUS1mMk5GMW0AAgQ_wpppAwQAjScA
+26-02-22.16:47:44.743 [http-nio-8080-exec-5] INFO  LoginController        - 扫码检测登录结果 ticket:gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyczhXS28xU2VjQXQxUS1mMk5GMW0AAgQ_wpppAwQAjScA openidToken:null
+26-02-22.16:48:43.803 [http-nio-8080-exec-6] INFO  WeixinPortalController - 接收微信公众号信息请求otk4k3c7aBAmW5OOpMzo_OE_Mo30开始 <xml><ToUserName><![CDATA[gh_7989e5551c86]]></ToUserName>
+<FromUserName><![CDATA[otk4k3c7aBAmW5OOpMzo_OE_Mo30]]></FromUserName>
+<CreateTime>1771750123</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyczhXS28xU2VjQXQxUS1mMk5GMW0AAgQ_wpppAwQAjScA]]></Ticket>
+</xml>
+26-02-22.16:48:45.359 [http-nio-8080-exec-8] INFO  WeixinPortalController - 接收微信公众号信息请求otk4k3c7aBAmW5OOpMzo_OE_Mo30开始 <xml><ToUserName><![CDATA[gh_7989e5551c86]]></ToUserName>
+<FromUserName><![CDATA[otk4k3c7aBAmW5OOpMzo_OE_Mo30]]></FromUserName>
+<CreateTime>1771750125</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>4398278932018593797</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+26-02-22.16:48:49.744 [http-nio-8080-exec-2] INFO  LoginController        - 扫码检测登录结果 ticket:gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyczhXS28xU2VjQXQxUS1mMk5GMW0AAgQ_wpppAwQAjScA openidToken:otk4k3c7aBAmW5OOpMzo_OE_Mo30
