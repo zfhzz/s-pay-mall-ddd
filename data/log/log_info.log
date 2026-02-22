@@ -1004,3 +1004,145 @@ Check the configured web application type.
 26-02-22.20:51:24.782 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
 26-02-22.20:51:24.790 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
 26-02-22.20:51:24.795 [main            ] INFO  Application            - Started Application in 1.534 seconds (JVM running for 2.203)
+26-02-22.21:01:49.858 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 32508 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:01:49.860 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:01:50.395 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:01:50.406 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:01:50.406 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:01:50.406 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:01:50.495 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:01:50.495 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 616 ms
+26-02-22.21:01:51.220 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.21:01:51.228 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.21:01:51.233 [main            ] INFO  Application            - Started Application in 1.604 seconds (JVM running for 2.265)
+26-02-22.21:40:07.056 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 26388 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:40:07.060 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:40:08.119 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 14836 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:40:08.123 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:40:08.318 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:40:08.326 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:40:08.326 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:40:08.326 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:40:08.506 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:40:08.507 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1391 ms
+26-02-22.21:40:08.869 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aliPayController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.alipay.api.AlipayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-02-22.21:40:08.872 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.21:40:08.881 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.21:40:08.902 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.alipay.api.AlipayClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.alipay.api.AlipayClient' in your configuration.
+
+26-02-22.21:40:09.065 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:40:09.072 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:40:09.072 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:40:09.073 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:40:09.242 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:40:09.242 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1063 ms
+26-02-22.21:40:09.605 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aliPayController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.alipay.api.AlipayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-02-22.21:40:09.608 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-02-22.21:40:09.616 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-02-22.21:40:09.636 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.alipay.api.AlipayClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.alipay.api.AlipayClient' in your configuration.
+
+26-02-22.21:41:20.581 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 32324 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:41:20.583 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:41:21.162 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:41:21.177 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:41:21.177 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:41:21.177 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:41:21.277 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:41:21.277 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 674 ms
+26-02-22.21:41:22.040 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.21:41:22.049 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.21:41:22.056 [main            ] INFO  Application            - Started Application in 1.696 seconds (JVM running for 2.474)
+26-02-22.21:42:15.179 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.21:42:15.179 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.21:42:15.180 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-02-22.21:42:15.226 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:hajiyan productId:hajiyan
+26-02-22.21:42:15.238 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-02-22.21:42:15.319 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-02-22.21:42:15.419 [http-nio-8080-exec-1] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userId: hajiyan orderId: 15569858244777 payUrl: <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=Z96aGkdu2Ks4So826itCr0acQB0hS227dno%2B1jU3OpNWKPq9eVS8LIliB4Iy8HMZUD6%2B8SJBbixgK8neUNU3IJ2pLwUPhvlOu3dH8B7u6sQ%2F6JlxuFvpanofMYpCVht0RkQ42kJZpP7sXO5d0ogwZ58CvZL9GxOgvpQGkMOVU0tK5aESsdR2bdKXezTFkSqfclzHXIhmTdmCNE9QBLx1zwk26tlDLyPVxWnozo%2F%2F53g2VgjM8cH8qbQ7s0d9HPcjHgf7iypDGDMPn50EQ2cDrRM8MxZpVD1CJllS3wq%2BvvKVUn5cW5XdLFpPfBiOkh3mIKRqY7xch3hSEy%2BxIW7IXg%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzfhzz.nat100.top%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000161677151&sign_type=RSA2&timestamp=2026-02-22+21%3A42%3A15&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;15569858244777&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-02-22.21:42:15.420 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:hajiyan productId:充气娃娃 orderId:15569858244777
+26-02-22.21:47:36.883 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-02-22.21:47:36.889 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-02-22.21:48:16.754 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 32032 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:48:16.756 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:48:17.294 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:48:17.299 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:48:17.299 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:48:17.299 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:48:17.395 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:48:17.395 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 620 ms
+26-02-22.21:48:18.194 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.21:48:18.204 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.21:48:18.209 [main            ] INFO  Application            - Started Application in 1.665 seconds (JVM running for 2.352)
+26-02-22.21:48:24.246 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.21:48:24.247 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.21:48:24.247 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.21:48:24.292 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:hajiyan productId:hajiyan
+26-02-22.21:48:24.303 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-02-22.21:48:24.382 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-02-22.21:48:24.488 [http-nio-8080-exec-1] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userId: hajiyan orderId: 54565096142037 payUrl: <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=hMJQNaS4mTYAnFz0vA2cr9HSnWPiC2Hd2DoT54eGnjuVbl6Mc7ab6nOa6HlEw3VcY2nFkTGLIiy9p%2FBvAkIAb6uraVoNCx9SkOdvx%2BcDg9FJWRLvtu1AUahOT3VW7g52k7bH%2BeIDMaRnbdW5VJ9PrhJYWp160EaeGiEJpyFf4UdPg77B6PybmLhy7S3vK7pO%2FAOIQc%2BthoE%2F3jgMBDw1SrPdwH%2FCrhF29sdNRSnfxC0o4xKMp0tLEgsFQCEAKKbQo%2FAH8piktmxTz4EFefxFhwXkaETv4hiej2V6Ezf06QgaK1rkWdlqFyAIIt3kTsyZYi3cGAJCbC5084ydeOdBLA%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzfhzz.nat100.top%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000161677151&sign_type=RSA2&timestamp=2026-02-22+21%3A48%3A24&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;54565096142037&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-02-22.21:48:24.488 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:hajiyan productId:充气娃娃2 orderId:54565096142037
+26-02-22.21:52:24.005 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-02-22.21:52:24.011 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-02-22.21:52:28.813 [main            ] INFO  Application            - Starting Application using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 31832 (E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app\target\classes started by ZFHZZ in E:\java_project\s-pay-mall-ddd)
+26-02-22.21:52:28.814 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-02-22.21:52:29.382 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+26-02-22.21:52:29.386 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+26-02-22.21:52:29.386 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-02-22.21:52:29.386 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-02-22.21:52:29.480 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-02-22.21:52:29.481 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
+26-02-22.21:52:30.205 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+26-02-22.21:52:30.213 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+26-02-22.21:52:30.218 [main            ] INFO  Application            - Started Application in 1.645 seconds (JVM running for 2.386)
+26-02-22.21:52:52.833 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-02-22.21:52:52.833 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-02-22.21:52:52.833 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+26-02-22.21:52:52.873 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:hajiyan productId:hajiyan
+26-02-22.21:52:52.885 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-02-22.21:52:52.964 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-02-22.21:52:53.065 [http-nio-8080-exec-1] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。userId: hajiyan orderId: 00786232624334 payUrl: <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=X9uWZdLnOpY8sIdjVFZkvZfvfd6v3L5wMzYMGEdOCwv5P9I30JW5Ea4wifiFbKQ3%2FEUCM0faT1prntRKLsm%2F%2F%2BLCNpcFpNEdJrPEDT073aRzaOZTymRLMiwja7Rbw9uJP%2BeTHsQc%2Bm06khAiClHTy9L%2BQfeoAg4PQSYNzB%2F5usmOu85XQE5OXDwe65rqdEys97gVzqKjx9T18H96djkUCrjbvwNVJRIwbQ6zR9SOJo4TZ8copo8pTefDQmxyyTbPkbWXKzVCIf3dVv0rLsga7h0fAtb3BjEarpWIjF7ORDWy7jQAbM%2ByfSw73jcYVrn9rC%2FE3L1x9Me75P3pSd3Ghw%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzfhzz.nat100.top%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000161677151&sign_type=RSA2&timestamp=2026-02-22+21%3A52%3A53&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;00786232624334&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+26-02-22.21:52:53.065 [http-nio-8080-exec-1] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:hajiyan productId:充气娃娃2 orderId:00786232624334
+26-02-22.21:55:24.625 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-02-22.21:55:24.631 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

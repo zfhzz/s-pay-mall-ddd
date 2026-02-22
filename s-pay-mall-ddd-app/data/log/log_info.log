@@ -322,3 +322,12 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 26-02-22.20:58:09.439 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"61798104401668","payUrl":"暂无"}
 26-02-22.20:58:09.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 26-02-22.20:58:09.453 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-02-22.21:01:27.852 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_391 on LAPTOP-EK831I6O with PID 34108 (started by ZFHZZ in E:\java_project\s-pay-mall-ddd\s-pay-mall-ddd-app)
+26-02-22.21:01:27.853 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+26-02-22.21:01:30.200 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 2.627 seconds (JVM running for 3.259)
+26-02-22.21:01:30.339 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-02-22.21:01:30.452 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-02-22.21:01:30.618 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10001","userId":"xiaofuge"}
+26-02-22.21:01:30.624 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"71428725298859","payUrl":"暂无"}
+26-02-22.21:01:30.645 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-02-22.21:01:30.654 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
