@@ -1,5 +1,6 @@
 package cn.bugstack.config;
 
+import cn.bugstack.trigger.listener.OrderPaySuccessListener;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.eventbus.EventBus;
@@ -24,5 +25,15 @@ public class GuavaConfig {
                 .expireAfterWrite(1, TimeUnit.HOURS)
                 .build();
     }
+
+    @Bean
+    public EventBus eventBusListener(OrderPaySuccessListener listener){
+        EventBus eventBus = new EventBus();
+        // 将监听器注册到总线上（相当于把收音机调到这个频道，并让 listener 守着）
+        // 只有注册了，listener 类中带有 @Subscribe 注解的方法才会生效
+        eventBus.register(listener);
+        return eventBus;
+    }
+
 
 }
